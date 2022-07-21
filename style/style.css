@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato:ital@0;1&family=Poppins:wght@200;400&family=Roboto+Condensed&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+
+}
+
+.envoltura {
+    display: grid;
+    grid-template-areas:
+        "nav "
+        "header"
+        "imagen"
+        "footer";
+    grid-template-columns: 100% auto;
+    grid-template-rows: 4% auto 40%;
+    gap: 8px;
+}
+
+header {
+    height: 45%;
+    background-color:orangered;
+    padding: 40px;
+
+ 
+    
+}
+
+.tituloSecciones{
+    font-size: 30px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+
+}
+
+.tituloDerecha {
+
+    font-size: 30px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(62, 4, 5);
+    padding: 40px;
+}
+
+h1 {
+    padding: 40px;
+    border: 20px solid red;
+    margin: 50px 80px 50px 50px;
+    position: sticky;
+    top: 40px;
+    left: 0px;
+    position: sticky;
+    font-style: normal;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: cornflowerblue;
+
+}
+
+.videos{
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+img {
+    justify-items: center;
+    border: 5px solid rosybrown;
+    width: 400px;
+    height: 400px;
+
+
+}
+
+.imagen1 {
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+    justify-items: center;
+}
+
+.parrafo1 {
+    color: red;
+    text-align: left;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 100px;
+
+}
+
+.imgSerie {
+    display: grid;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+footer {
+    padding: 50px;
+    margin-bottom: 0;
+    margin-top: 200px;
+    background-color:rgb(62, 4, 5);
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    grid-area: nav;
+}
+header{
+    grid-area: header;
+}
+
+.imagen-grid {
+    grid-area: imagen;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.imagen {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.imagenManga {
+    height: 200px;
+    width: 200px;
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+
+
+}
+
+@media (min-width: 500px) {
+
+    header {
+        height: auto;
+        background-color:orangered;
+        padding: 40px;
+        color: whitesmoke;
+        text-align: -webkit-center;
+       
+       
+    }
+
+    .tituloDerecha {
+        width: 20px;
+        word-wrap: break-word;
+        text-align: center;
+        font-size: 80px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+    .tituloSecciones{
+        font-size: 80px;
+        margin: auto;
+        padding-top: 50px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    }
+
+    .envoltura {
+        display: grid;
+        height: auto;
+        grid-template-areas:
+            "nav    header"
+            "imagen header"
+            "imagen header"
+            "footer header";
+        grid-template-columns: 70% auto;
+        grid-template-rows: 20% auto 20%;
+        gap: 8px;
+    }
+
+    .padre{
+        padding: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        height: auto;
+        margin: 0;
+    }
+    .videos{
+            padding: 1.5em;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 15px;
+            justify-items: center;
+        }
+    }
+
+    @media (min-width:768px){    
+        .envoltura {
+            display: grid;
+            height: auto;
+            grid-template-areas:
+                "nav    header"
+                "imagen header"
+                "imagen header"
+                "footer header";
+            grid-template-columns: 70% auto;
+            grid-template-rows: 20% auto 20%;
+            gap: 8px;
+        }
+
+        .padre{
+            padding: 1.5em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ; 
+            height: auto;
+            margin: 0;
+
+        }
+        .videos{
+            padding: 1.5em;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 15px;
+            justify-items: center;
+        }
+    }
+        @media (min-width:1024px){    
+            .envoltura {
+                display: grid;
+                height: auto;
+                grid-template-areas:
+                    "nav    header"
+                    "imagen header"
+                    "imagen header"
+                    "footer header";
+                grid-template-columns: 70% auto;
+                grid-template-rows: 20% auto 20%;
+                gap: 8px;
+            }
+            .padre{
+                padding: 1.5em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr; 
+                height: auto;
+                margin: 0;
+            }
+
+                .videos{
+                    padding: 1.5em;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 15px;
+                    justify-items: center;
+                }
+    
+
+    }
+
+  
+
+    
