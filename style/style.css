@@ -179,15 +179,13 @@ footer {
     transition: all 4s;
 }
 
-.imagenManga {
-    height: 200px;
-    width: 200px;
-    padding: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    justify-items: center;
+.listaManga{
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
 }
+
 .imagen-grid:hover .imagen{
     transform: scale(1.5);
 }
@@ -196,6 +194,42 @@ footer {
     transform: scale(1.4);
 }
 
+.fondoNav{
+    background-color: rgb(62, 4, 5);
+    padding: 5%;
+}
+.nav{
+    justify-content: left space-between;
+    display: flex;
+}
+.parrafoInicio{
+    text-align: justify;
+    color: white;
+    font-size:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 120px 120px 120px 120px;
+}
+.tituloSerie{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    font-size:50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    color: yellow;
+}
+.subtituloSerie{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.parrafoSerie{
+    margin: 20px;
+    color: azure;
+    text-align: justify;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
 
 
 
