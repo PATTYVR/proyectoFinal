@@ -67,6 +67,7 @@ nav ul {
     justify-content: space-evenly;
     background-color: rgb(62, 4, 5);
     padding: 40px;
+  
 }
 
 h1 {
@@ -186,9 +187,7 @@ footer {
     gap: 20px;
 }
 
-.imagen-grid:hover .imagen{
-    transform: scale(1.5);
-}
+
 
 .secciones:hover .tituloSecciones{
     transform: scale(1.4);
@@ -196,11 +195,15 @@ footer {
 
 .fondoNav{
     background-color: rgb(62, 4, 5);
-    padding: 5%;
+    padding top: 5px;
+    margin top: 5px;
+    
 }
 .nav{
     justify-content: left space-between;
     display: flex;
+    padding: 20px;
+    margin: 20px;
 }
 .parrafoInicio{
     text-align: justify;
@@ -290,6 +293,7 @@ footer {
             gap: 15px;
             justify-items: center;
         }
+
     }
 
     @media (min-width:768px){    
@@ -322,6 +326,18 @@ footer {
             gap: 15px;
             justify-items: center;
         }
+       
+        .imagen {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 15px;
+            justify-items: center;
+            transition: all 4s;
+        }
+        .imagen-grid:hover .imagen{
+            transform: scale(1.5);
+        }
     }
         @media (min-width:1024px){    
             .envoltura {
@@ -351,7 +367,17 @@ footer {
                     gap: 15px;
                     justify-items: center;
                 }
-    
+                .imagen {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    gap: 15px;
+                    justify-items: center;
+                    transition: all 4s;
+                }
+                .imagen-grid:hover .imagen{
+                    transform: scale(1.5);
+                }
 
     }
 
