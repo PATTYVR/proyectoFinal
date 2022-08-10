@@ -58,9 +58,21 @@ ul li {
 
 a {
     text-decoration: none;
-    color: yellow;
+    color: yellow!important;
+    font-size: medium;
+    font-family:'Lato', sans-serif ;
+   
 }
+a:link{
+    color: red!important;
+   } 
 
+   a:active{
+    color: blue!important;
+   }
+   a:hover{
+    background-color:orangered;
+   }
 nav ul {
     display: flex;
     flex-direction: row;
@@ -181,6 +193,7 @@ footer {
 }
 
 .listaManga{
+    color: yellow;
     justify-content: center;
     padding: 20px;
     display: flex;
@@ -196,9 +209,9 @@ footer {
 .fondoNav{
     background-color: rgb(62, 4, 5);
     padding top: 5px;
-    margin top: 5px;
-    
+    margin top: 5px;  
 }
+
 .nav{
     justify-content: left space-between;
     display: flex;
@@ -234,7 +247,7 @@ footer {
 
 }
 
-
+ 
 
 @media (min-width: 500px) {
 
