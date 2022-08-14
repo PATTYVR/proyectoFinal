@@ -1,0 +1,18 @@
+nav {
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(62, 4, 5);
+    }
+     li {
+    list-style-type: none;
+    display: inline;
+     }
+     a {
+        text-decoration: none;
+        color: yellow!important;
+        font-size: medium;
+        font-family:'Lato', sans-serif ; 
+    }
+    }
