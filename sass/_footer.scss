@@ -3,15 +3,30 @@ footer {
     margin-bottom: 0;
     margin-top: 200px;
     background-color:$colorFooter;
+    
 }
-
-.icon {
+//extend//
+.redsocial{
+    border:2px solid $colorFooter;
     width: 48px;
     height: 48px;
+    
+    
+}
+
+.redsocial--icon{
+    @extend .redsocial;
+    background-color: $colorFooter;
+    
+
 }
 
 .redes {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:start;
+    gap: 20px;
+    
+    
+
 }

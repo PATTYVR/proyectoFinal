@@ -18,15 +18,23 @@
     gap: 8px;
 }
 
-
-
-.tituloSecciones{
+//mapa//
+$titulos:(
+    tSecciones:black,
+);
+@each $titulo, $color in $titulos{
+    .btn--#{$titulo}{
+        color:$color;
+    }
+    
+}
+.btn--tSecciones{
     font-size: 20px;
     margin: auto;
     padding-top: 50px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
+   
     transition: all 2s;
 }
 
@@ -49,22 +57,6 @@ a:link{
    }
 
 
-h1 {
-    padding: 40px;
-    border: 20px solid red;
-    margin: 50px 80px 50px 50px;
-    position: sticky;
-    top: 40px;
-    left: 0px;
-    position: sticky;
-    font-style: normal;
-    font-weight: lighter;
-    font-family: 'Lato', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    color: cornflowerblue;
-
-}
 
 .videos{
     padding: 1.5em;
@@ -83,12 +75,16 @@ h1 {
     justify-items: center;
 }
 
-img {
-    justify-items: center;
-    border: 5px solid rosybrown;
-    width: 400px;
-    height: 400px;
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;    
 }
+.imagen_inicio{
+    @include sizes(400px, 400px);
+    justify-items: center;
+    border: 2px solid orangered;
+}
+
 
 .imagen1 {
     margin-top: 40px;
@@ -150,7 +146,7 @@ footer {
     justify-items: center;
 } 
 
-.secciones:hover .tituloSecciones{
+.secciones:hover .btn--tSecciones{
     transform: scale(1.4);
 }
 
@@ -209,19 +205,22 @@ footer {
         color: white;
         font-size:15px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin: 25px 25px 25px 25px;
+        margin:25px 25px 25px 25px;
+        
     }
     
-    .secciones:hover .tituloSecciones{
+    .secciones:hover .btn--tSecciones{
     transform: scale(1.4);
     }
 
-    .tituloSecciones{
-        font-size: 25px;
+
+    .btn--tSecciones{
+        font-size: 20px;
+        margin: auto;
+        padding-top: 50px;
         text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         transition: all 2s;
-    
     }
     .envoltura {
         display: grid;
@@ -352,6 +351,16 @@ footer {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin: 60px 60px 60px 60px;
         }
+     
+        .btn--tSecciones{
+            font-size: 20px;
+            margin: auto;
+            padding-top: 50px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            transition: all 2s;
+        }
        
      
         .fondoNav{
@@ -444,14 +453,13 @@ footer {
                     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     justify-content: center;
                 }
-                .tituloSecciones{
-                    font-size: 50px;
-                    margin: auto;
+             
+                    .btn--tSecciones{
+                        font-size: 50px;
+                        margin: auto;
                     padding-top: 50px;
                     text-align: center;
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    color: black;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     transition: all 2s;
-                
-                }
+}
             }          
