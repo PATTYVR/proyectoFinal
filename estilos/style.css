@@ -130,10 +130,18 @@ a:hover {
 
 .parrafo1 {
   color: red;
-  text-align: left;
+  justify-content: right;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-left: 100px;
+  margin-left: 60px;
+}
+
+.parrafo2 {
+  color: red;
+  justify-content: right;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 60px;
 }
 
 .imgSerie {
@@ -142,6 +150,14 @@ a:hover {
   margin-left: 30px;
   width: 400px;
   height: 400px;
+}
+
+.SubtituloPeliculas {
+  color: yellow;
+  text-align: center;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 40px;
 }
 
 nav {
@@ -170,12 +186,11 @@ footer {
 }
 
 .listaManga {
-  color: black;
+  padding: 1.5em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 15px;
-  justify-items: center;
+  height: auto;
+  margin: 0;
 }
 
 .secciones:hover .btn--tSecciones {
@@ -266,8 +281,21 @@ footer {
     padding: 1.5em;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
     height: auto;
     margin: 0;
+  }
+  .fotoManga {
+    width: 150px;
+    height: 200px;
+  }
+  .parrafo1 {
+    color: red;
+    justify-content: right;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 15px;
   }
   footer {
     height: auto;
@@ -279,7 +307,6 @@ footer {
   .tituloDerecha {
     font-size: 40px;
     margin-top: -30px;
-    /*padding-top: 50px;*/
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
@@ -323,7 +350,8 @@ footer {
   .padre {
     padding: 1.5em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     height: auto;
     margin: 0;
   }
@@ -341,9 +369,13 @@ footer {
   .listaManga {
     padding: 1.5em;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     height: auto;
     margin: 0;
+  }
+  .fotoManga {
+    width: 150px;
+    height: 200px;
   }
   .tituloDerecha {
     width: 20px;
