@@ -9,12 +9,11 @@
 .envoltura {
     display: grid;
     grid-template-areas:
-        "nav "
         "header"
+        "nav "
         "imagen"
         "footer";
     grid-template-columns: 1fr;
-    /*grid-template-rows: 4% auto 40%;*/
     gap: 8px;
 }
 
@@ -127,8 +126,6 @@ a:link{
 
 }
 
-
-
 nav {
     grid-area: nav;
 }
@@ -156,7 +153,8 @@ footer {
 .listaManga {
     padding: 1.5em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-columns: 1fr; 
+    justify-items: center;
     height: auto;
     margin: 0;
 } 
@@ -241,12 +239,11 @@ footer {
     .envoltura {
         display: grid;
         grid-template-areas:
-            "nav "
             "header"
+             "nav " 
             "imagen"
             "footer";
         grid-template-columns: 1fr;
-        /*grid-template-rows: 4% auto 40%;*/
         gap: 8px;
     }
 
@@ -263,7 +260,6 @@ footer {
         padding: 1.5em;
         display: grid;
         grid-template-columns: 1fr; 
-        grid-template-rows: auto;
         justify-items: center;
         height: auto;
         margin: 0;
