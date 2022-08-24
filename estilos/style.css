@@ -113,8 +113,8 @@ a:hover {
 }
 
 .imagen_inicio {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   justify-items: center;
   border: 2px solid orangered;
 }
@@ -130,9 +130,9 @@ a:hover {
 .parrafo1 {
   color: red;
   justify-content: right;
-  font-size: 20px;
+  font-size: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-left: 60px;
+  margin-left: 15px;
 }
 
 .parrafo2 {
@@ -154,7 +154,7 @@ a:hover {
 .SubtituloPeliculas {
   color: yellow;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 40px;
 }
@@ -193,6 +193,11 @@ footer {
   margin: 0;
 }
 
+.fotoManga {
+  width: 150px;
+  height: 200px;
+}
+
 .secciones:hover .btn--tSecciones {
   transform: scale(1.4);
 }
@@ -200,14 +205,6 @@ footer {
 .fondoNav {
   background-color: rgb(62, 4, 5);
   height: 150px;
-}
-
-.parrafoInicio {
-  text-align: justify;
-  color: white;
-  font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin: 120px 120px 120px 120px;
 }
 
 .tituloSerie {
@@ -231,6 +228,27 @@ footer {
   text-align: justify;
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  height: 130px;
+  width: auto;
+  background-color: orangered;
+  padding: 20px 20px 20px 20px;
+  color: whitesmoke;
+  text-align: -webkit-center;
+}
+
+.parrafoInicio {
+  text-align: justify;
+  color: white;
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 5px 5px 5px 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 50px;
 }
 
 @media (min-width: 500px) {
