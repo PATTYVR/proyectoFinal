@@ -57,7 +57,7 @@ footer {
 
 .envoltura {
   display: grid;
-  grid-template-areas: "nav " "header" "imagen" "footer";
+  grid-template-areas: "header" "nav " "imagen" "footer";
   grid-template-columns: 1fr;
   gap: 8px;
 }
@@ -187,7 +187,8 @@ footer {
 .listaManga {
   padding: 1.5em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
   height: auto;
   margin: 0;
 }
