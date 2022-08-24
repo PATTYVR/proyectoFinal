@@ -58,8 +58,8 @@ footer {
 .envoltura {
   display: grid;
   grid-template-areas: "nav " "header" "imagen" "footer";
-  grid-template-columns: 100% auto;
-  grid-template-rows: 4% auto 40%;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: 4% auto 40%;*/
   gap: 8px;
 }
 
