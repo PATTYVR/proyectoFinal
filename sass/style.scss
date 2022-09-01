@@ -4,516 +4,639 @@
 @import "generales";
 @import "footer";
 
-
-
 .envoltura {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "nav "
-        "imagen"
-        "footer";
-    grid-template-columns: 1fr;
-    gap: 8px;
+  display: grid;
+  grid-template-areas: "header" "nav " "imagen" "footer";
+  grid-template-columns: 1fr;
+  gap: 8px;
 }
 
-//mapa//
-$titulos:(
-    tSecciones:black,
-);
-@each $titulo, $color in $titulos{
-    .btn--#{$titulo}{
-        color:$color;
-    }
-    
+.btn--tSecciones {
+  color: whitesmoke;
 }
-.btn--tSecciones{
-    font-size: 20px;
-    margin: auto;
-    padding-top: 50px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: all 2s;
+
+.btn--tSecciones {
+  font-size: 15px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: all 2s;
 }
 
 .tituloDerecha {
-    font-size: 30px;
-    margin: auto;
-    padding-top: 50px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: green;
 }
 
-a:link{
-    color: red!important;
-   } 
-   a:active{
-    color: blue!important;
-   }
-   a:hover{
-    background-color:orangered;
-   }
-
-
-
-.videos{
-    padding: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
-    justify-items: center;
+a:link {
+  color: red !important;
 }
 
-.padre{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
-    justify-items: center;
+a:active {
+  color: blue !important;
 }
 
-@mixin sizes($width, $height){
-    width: $width;
-    height: $height;    
-}
-.imagen_inicio{
-    @include sizes(300px, 300px);
-    justify-items: center;
-    border: 2px solid orangered;
+a:hover {
+  background-color: orangered;
 }
 
+.padre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+
+.imagen_inicio {
+  width: 300px;
+  height: 300px;
+  justify-items: center;
+}
+
+.imagen_inicio2{
+  width: 300px;
+  height: 300px;
+  justify-items: center;
+  padding-left: 15px;
+  
+}
 
 .imagen1 {
-    margin-top: 40px;
-    margin-left: 30px;
-    width: 200px;
-    height: 200px;
-    justify-items: center;
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 200px;
+  height: 200px;
+  justify-items: center;
+  border: 5px solid green;
+}
+.SubtituloPeliculas {
+  color: yellow;
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 40px;
 }
 
+.subpelicula{
+  color: #009900;
+ font-size:18px;
+}
+.pelis{
+  display: grid;
+  grid-template-columns: 0.7fr;
+  text-align: center;
+
+}
+li {
+  list-style-type: none;
+}
 
 .parrafo1 {
-    color: red;
-    justify-content: right;
-    font-size: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 15px;
+  display: grid;
+  grid-template-columns: 0.7fr;
+  text-align:justify;
+  color:white;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 40px;
+}
+.parrafoM{
+  display: grid;
+  grid-template-columns: 0.7fr;
+  text-align:center;
+  color:white;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 40px;
 
 }
-.parrafo2 {
-    color: red;
-    justify-content: right;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 60px;
+.videos {
+  padding: 0.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-items: center;
+}
 
+.parrafo2 {
+  color: white;
+  justify-content: right;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 60px;
 }
 
 .imgSerie {
-    display: grid;
-    margin-top: 40px;
-    margin-left: 30px;
-    width: 400px;
-    height: 400px;
+  display: grid;
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 400px;
+  height: 400px;
 }
 
-.SubtituloPeliculas{
-    color: yellow;
-    text-align: center;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 40px;
-
-}
 
 
 nav {
-    grid-area: nav;
+  grid-area: nav;
 }
-header{
-    grid-area: header;
+
+header {
+  grid-area: header;
 }
 
 .imagen-grid {
-    grid-area: imagen;
+  grid-area: imagen;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 .imagen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-items: center;
+  transition: all 4s;
+}
+
+.listaManga {
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  height: auto;
+  margin: 0;
+}
+
+.fotoManga {
+  width: 150px;
+  height: 200px;
+}
+
+.secciones:hover .btn--tSecciones {
+  transform: scale(1.4);
+}
+
+.fondoNav {
+  background-color: $colornav;
+  height: 150px;
+}
+
+.tituloSerie {
+  display: flex;
+  padding: 15px;
+  margin: 15px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  justify-content:center;
+  color: yellow;
+}
+
+.subtituloSerie {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.parrafoSerie {
+  margin: 20px;
+  color: azure;
+  text-align: justify;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  height: 130px;
+  width: auto;
+  background-color: $colorHeader;
+  padding: 20px 20px 20px 20px;
+  color: whitesmoke;
+  text-align: -webkit-center;
+}
+
+.parrafoInicio {
+  text-align: justify;
+  color: white;
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 5px 5px 5px 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+@media (min-width: 500px) {
+  header {
+    height: 130px;
+    background-color: $colorHeader;
+    padding: 20px 20px 20px 20px;
+    color: whitesmoke;
+    text-align: -webkit-center;
+  }
+  .fondoNav {
+    background-color: $colornav;
+    height: 65px;
+  }
+  .parrafoInicio {
+    text-align: justify;
+    color: white;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 25px 25px 25px 25px;
+  }
+  .imagen_inicio {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    padding-right: 50px;
+    padding-top: 20px;
+  }
+
+  .imagen_inicio2{
+    width: 400px;
+    height: 400px;
+    justify-items: center;
+    padding-left: 80px;
+
+  }
+  .secciones:hover .btn--tSecciones {
+    transform: scale(1.4);
+  }
+  .btn--tSecciones {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    transition: all 2s;
+  }
+  .envoltura {
+    display: grid;
+    grid-template-areas: "header" "nav " "imagen" "footer";
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .padre {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin: 0;
+  }
+  .listaManga {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: auto;
+    margin: 0;
+  }
+  .fotoManga {
+    width: 150px;
+    height: 200px;
+  }
+  .parrafo1 {
+    color: red;
+    justify-content: right;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 15px;
+  }
+  footer {
+    height: auto;
+    padding: 50px;
+    margin-bottom: 0;
+    margin-top: 600px;
+    background-color: #006400;
+  }
+  .tituloDerecha {
+    font-size: 40px;
+    margin-top: -30px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .subpelicula{
+    color: #009900;
+   font-size:18px;
+  }
+  .pelis{
+    display: grid;
+    grid-template-columns: 0.7fr;
+    text-align: center;
+  
+  }
+  
+  .parrafo1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align:justify;
+    color: white;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .videos {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+  }
+  .subtituloSerie {
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .tituloSerie {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    justify-content: center;
+    color: yellow;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    height: auto;
+    background-color:#009900;
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+
+  ul a{
+    background-color:#009900 ;
+    
+  }
+  .imagen_inicio {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    padding-right: 50px;
+    padding-top: 20px;
+  }
+
+  .imagen_inicio2{
+    width: 400px;
+    height: 400px;
+    padding-left: 80px;
+    justify-items: center;
+    transition: all 4s;
+
+  }
+  .envoltura {
+    display: grid;
+    height: auto;
+    grid-template-areas: "nav    header" "imagen header" "imagen header" "footer header";
+    grid-template-columns: 70% auto;
+    grid-template-rows: 20% auto 20%;
+    gap: 8px;
+  }
+  .padre {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    margin: 0;
+  }
+  .imagen {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 15px;
     justify-items: center;
     transition: all 4s;
-}
-
-
-.listaManga {
+  }
+  .imagen-grid:hover .imagen {
+    transform: scale(1.5);
+  }
+  .listaManga {
     padding: 1.5em;
     display: grid;
-    grid-template-columns: 1fr; 
-    justify-items: center;
+    grid-template-columns: 1fr 1fr;
     height: auto;
     margin: 0;
-} 
-.fotoManga{
+  }
+  .fotoManga {
     width: 150px;
     height: 200px;
-   
+  }
+  .tituloDerecha {
+    width: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: red;
+  }
+  .parrafoInicio {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 60px 60px 60px 60px;
+  }
+  .btn--tSecciones {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    transition: all 2s;
+  }
+  .fondoNav {
+    background-color:#009900;
+    height: 200px;
+    
+  }
+  .subpelicula{
+    color: #009900;
+   font-size:18px;
+  }
+  .pelis{
+    display: grid;
+    grid-template-columns: 0.7fr;
+    text-align: center;
+  
+  }
+  
+  .parrafo1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align:justify;
+    color: white;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .videos {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+  }
+  footer{
+    background-color:#009900;
+  }
+  .redsocial{
+    border:2px solid #009900;
+    width: 48px;
+    height: 48px;
+    
+    
 }
 
+.redsocial--icon{
+    @extend .redsocial;
+    background-color:#009900;
+    
 
-.secciones:hover .btn--tSecciones{
-    transform: scale(1.4);
 }
-
-.fondoNav{
-    background-color: rgb(62, 4, 5);
-    height: 150px;  
-}
-
-
-.tituloSerie{
+  .tituloSerie {
     display: flex;
     padding: 20px;
     margin: 20px;
-    font-size:50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     justify-content: center;
-    color: yellow;
+  }
 }
-.subtituloSerie{
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.parrafoSerie{
-    margin: 20px;
-    color: azure;
-    text-align: justify;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-header {
-    height: 130px;
-    width: auto;
-    background-color:$colorHeader;
-    padding: 20px 20px 20px 20px;
-    color: whitesmoke;
-    text-align: -webkit-center;  
-       
-}
-.parrafoInicio{
-    text-align: justify;
-    color: white;
-    font-size:12px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin:5px 5px 5px 5px;
-    padding-top: 10px;
+@media (min-width: 1024px) {
+  header {
+    height: auto;
+    background-color: #009900 ;
+    padding: 80px;
     padding-left: 10px;
-    padding-right: 20px;
+  }
+  .fondoNav {
+    background-color: #009900 ;
+    height: 150px;
+  }
+  ul a{
+    background-color:#009900 ;
+    
+  }
+  .envoltura {
+    display: grid;
+    height: auto;
+    grid-template-areas: "nav    header" "imagen header" "imagen header" "footer header";
+    grid-template-columns: 70% auto;
+    grid-template-rows: 20% auto 20%;
+    gap: 8px;
+  }
+  .imagen{
+    width: 500px;
+    height: 500px;
+    padding-left: 50px;
+    justify-items: center;
+  }
+
+  .imagen_inicio2{
+    width: 600px;
+    height: 600px;
+    justify-items: center;
+    padding-left: 150px;
+
+  }
+  .padre {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    margin: 0;
+  }
+  .videos {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+  }
+  .imagen {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+    transition: all 4s;
+  }
+  .imagen-grid:hover .imagen {
+    transform: scale(1.5);
+  }
+  .listaManga {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .fotoManga {
+    width: 300px;
+    height: 400px;
+  }
+  .subpelicula{
+    color: #009900;
+   font-size:18px;
+  }
+  .pelis{
+    display: grid;
+    grid-template-columns: 0.7fr;
+    text-align: center;
+  
+  }
+  
+  .parrafo1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align:justify;
+    color: white;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .videos {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 15px;
+    justify-items: center;
+  }
+  .tituloDerecha {
+    width: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .tituloSerie {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    justify-content: center;
+  }
+  .btn--tSecciones {
+    font-size: 50px;
+    margin: auto;
     padding-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    transition: all 2s;
+  }
+
 }
-
-
-@media (min-width: 500px) {
-
-    header {
-        height: 130px;
-        background-color:$colorHeader;
-        padding: 20px 20px 20px 20px;
-        color: whitesmoke;
-        text-align: -webkit-center;  
-           
-    }
-    .fondoNav{
-        background-color: rgb(62, 4, 5);
-        height: 65px;  
-    }
-
-    .parrafoInicio{
-        text-align: justify;
-        color: white;
-        font-size:15px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin:25px 25px 25px 25px;
-        
-    }
-    
-    .secciones:hover .btn--tSecciones{
-    transform: scale(1.4);
-    }
-
-
-    .btn--tSecciones{
-        font-size: 20px;
-        margin: auto;
-        padding-top: 50px;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        transition: all 2s;
-    }
-    .envoltura {
-        display: grid;
-        grid-template-areas:
-            "header"
-             "nav " 
-            "imagen"
-            "footer";
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-
-    .padre{
-        padding: 1.5em;
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        height: auto;
-        margin: 0;
-    }
-
-    .listaManga {
-        padding: 1.5em;
-        display: grid;
-        grid-template-columns: 1fr; 
-        justify-items: center;
-        height: auto;
-        margin: 0;
-    } 
-    .fotoManga{
-        width: 150px;
-        height: 200px;
-       
-    }
-    .parrafo1 {
-        color: red;
-        justify-content: right;
-        font-size: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin-left: 15px;
-    
-    }
-   
-    footer {
-        height: auto;
-        padding: 50px;
-        margin-bottom: 0;
-        margin-top: 600px;
-        background-color:$colorFooter;
-    }
-    .tituloDerecha {
-
-        font-size: 40px;
-        margin-top: -30px;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .videos{
-            
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 15px;
-        justify-content: center;
-        margin-left: auto;    
-    }
-    .subtituloSerie{
-        color: white;
-        font-size: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .tituloSerie{
-        display: flex;
-        padding: 20px;
-        margin: 20px;
-        font-size:20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        justify-content: center;
-        color: yellow;
-    }
-   
-    }
-    @media (min-width:768px){   
-        header {
-            height: auto;
-            background-color:$colorHeader;
-            padding: 40px;   
-        }
-        
-        .envoltura {
-            display: grid;
-            height: auto;
-            grid-template-areas:
-                "nav    header"
-                "imagen header"
-                "imagen header"
-                "footer header";
-            grid-template-columns: 70% auto;
-            grid-template-rows: 20% auto 20%;
-            gap: 8px;
-        }
-
-        .padre{
-            padding: 1.5em;
-            display: grid;
-            grid-template-columns: 1fr 1fr; 
-            grid-template-rows: auto;
-            height: auto;
-            margin: 0;
-        }
-     
-        .imagen {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            gap: 15px;
-            justify-items: center;
-            transition: all 4s;
-        }
-        .imagen-grid:hover .imagen{
-            transform: scale(1.5);
-        }
-        .listaManga {
-            padding: 1.5em;
-            display: grid;
-            grid-template-columns: 1fr 1fr ; 
-            height: auto;
-            margin: 0;
-        } 
-        .fotoManga{
-            width: 150px;
-            height: 200px;
-        }
-        .tituloDerecha {
-            width: 20px;
-            word-wrap: break-word;
-            text-align: center;
-            font-size: 80px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .parrafoInicio{
-            text-align: justify;
-            color: white;
-            font-size:20px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            margin: 60px 60px 60px 60px;
-        }
-     
-        .btn--tSecciones{
-            font-size: 20px;
-            margin: auto;
-            padding-top: 50px;
-            text-align: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-            transition: all 2s;
-        }
-       
-     
-        .fondoNav{
-            background-color: rgb(62, 4, 5);
-            height: 150px;  
-        }
-        .tituloSerie{
-            display: flex;
-            padding: 20px;
-            margin: 20px;
-            font-size:30px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            justify-content: center;
-        }
-    }
-        @media (min-width:1024px){    
-
-            header {
-                height: auto;
-                background-color:$colorHeader;
-                padding: 40px;   
-            }
-
-            .fondoNav{
-                background-color: rgb(62, 4, 5);
-                height: 150px;  
-            }
-            .envoltura {
-                display: grid;
-                height: auto;
-                grid-template-areas:
-                    "nav    header"
-                    "imagen header"
-                    "imagen header"
-                    "footer header";
-                grid-template-columns: 70% auto;
-                grid-template-rows: 20% auto 20%;
-                gap: 8px;
-            }
-            .padre{
-                padding: 1.5em;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr; 
-                height: auto;
-                margin: 0;
-            }
-
-                .videos{
-                    padding: 1.5em;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 15px;
-                    justify-items: center;
-                }
-                .imagen {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
-                    gap: 15px;
-                    justify-items: center;
-                    transition: all 4s;
-                }
-                .imagen-grid:hover .imagen{
-                    transform: scale(1.5);
-                }
-                .listaManga {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr; 
-                    grid-template-rows: auto;
-                 
-                } 
-
-                .fotoManga{
-                    width: 300px;
-                    height: 400px;
-                }
-                .tituloDerecha {
-                    width: 20px;
-                    word-wrap: break-word;
-                    text-align: center;
-                    font-size: 80px;
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    
-                }
-                .tituloSerie{
-                    display: flex;
-                    padding: 20px;
-                    margin: 20px;
-                    font-size:50px;
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    justify-content: center;
-                }
-             
-                    .btn--tSecciones{
-                        font-size: 50px;
-                        margin: auto;
-                    padding-top: 50px;
-                    text-align: center;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    transition: all 2s;
-}
-            }          

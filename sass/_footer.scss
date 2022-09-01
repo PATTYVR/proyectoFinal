@@ -1,8 +1,9 @@
 footer {
     padding: 50px;
     margin-bottom: 0;
-    margin-top: 200px;
+    margin-top: 900px;
     background-color:$colorFooter;
+    height: 400px;
     
 }
 //extend//
@@ -26,7 +27,5 @@ footer {
     flex-direction: row;
     justify-content:start;
     gap: 20px;
-    
-    
 
 }

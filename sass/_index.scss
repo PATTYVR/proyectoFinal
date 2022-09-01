@@ -3,7 +3,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(62, 4, 5);
+    background-color: $colornav;
     }
      li {
     list-style-type: none;
@@ -11,7 +11,7 @@ ul {
      }
      a {
         text-decoration: none;
-        color: yellow!important;
+        color: black!important;
         font-size: medium;
         font-family:'Lato', sans-serif ; 
     }
