@@ -63,7 +63,7 @@ a:hover {
   width: 300px;
   height: 300px;
   justify-items: center;
-  padding-left: 15px;
+  padding-left: 40px;
   
 }
 
@@ -104,7 +104,7 @@ li {
   color:white;
   font-size: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
-  padding-left: 40px;
+  padding-left: 15px;
 }
 .parrafoM{
   display: grid;
@@ -287,11 +287,11 @@ header {
     gap: 8px;
   }
   .padre {
-    padding: 1.5em;
+    padding: 0.5fr;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: auto;
-    margin: 0;
+  
   }
   .listaManga {
     padding: 1.5em;
@@ -305,20 +305,15 @@ header {
     width: 150px;
     height: 200px;
   }
-  .parrafo1 {
-    color: red;
-    justify-content: right;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    margin-left: 15px;
-  }
   footer {
-    height: auto;
     padding: 50px;
     margin-bottom: 0;
-    margin-top: 600px;
-    background-color: #006400;
-  }
+    margin-top: 100px;
+    background-color:$colorFooter;
+    height: 200px;
+    
+}
+  
   .tituloDerecha {
     font-size: 40px;
     margin-top: -30px;
@@ -377,7 +372,7 @@ header {
   }
 
   ul a{
-    background-color:#009900 ;
+    background-color:orangered ;
     
   }
   .imagen_inicio {
@@ -449,6 +444,15 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     margin: 60px 60px 60px 60px;
   }
+
+  .SubtituloPeliculas {
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-top: 20px;
+    
+  }
   .btn--tSecciones {
     font-size: 20px;
     margin: auto;
@@ -458,7 +462,7 @@ header {
     transition: all 2s;
   }
   .fondoNav {
-    background-color:#009900;
+    background-color:orangered;
     height: 200px;
     
   }
@@ -470,6 +474,7 @@ header {
     display: grid;
     grid-template-columns: 0.7fr;
     text-align: center;
+    padding-left: 90px;
   
   }
   
@@ -483,12 +488,13 @@ header {
     
   }
   .videos {
-    padding: 1.5rem;
+    padding: 10rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 5px;
     justify-items: center;
+    padding: 50px;
   }
   footer{
     background-color:#009900;
@@ -524,11 +530,11 @@ header {
     padding-left: 10px;
   }
   .fondoNav {
-    background-color: #009900 ;
+    background-color: orangered ;
     height: 150px;
   }
   ul a{
-    background-color:#009900 ;
+    background-color:orangered;
     
   }
   .envoltura {
